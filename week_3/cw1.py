@@ -13,7 +13,12 @@ class Vector3:
         new_v = Vector3(self.a + v.a, self.b + v.b, self.c + v.c)
         return new_v
 
+    def __eq__(self, v):
+        if self.a == v.a and self.b == v.b and self.c == v.c:
+            return True
+        else:
+            return False
+
 v1 = Vector3(2, 1, 5)
-v2 = Vector3(0, 1, 10)
-print(v1 + v2)
-print(v1.__add__(v2))
+v2 = Vector3(2, 1, 5)
+print(v1.__eq__(v2))
