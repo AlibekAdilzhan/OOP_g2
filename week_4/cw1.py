@@ -7,4 +7,3 @@ def list_sum(mylist: List[float]) -> float:
     return s
 
 mylist = [1.0, 5.2, 7.9]
-print(list_sum(mylist))
